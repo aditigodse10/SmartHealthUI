@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Healthcare Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>SmartHealth</h2>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Patients</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Welcome, Aditi</h1>
+        <p>Monitor your smart healthcare analytics below</p>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Total Patients</h3>
+          <p>1,240</p>
+        </div>
+        <div class="card">
+          <h3>Appointments Today</h3>
+          <p>87</p>
+        </div>
+        <div class="card">
+          <h3>Critical Alerts</h3>
+          <p>5</p>
+        </div>
+        <div class="card">
+          <h3>Device Sync</h3>
+          <p>98%</p>
+        </div>
+      </section>
+
+      <section class="charts">
+        <canvas id="patientsChart"></canvas>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
